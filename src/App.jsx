@@ -4,6 +4,7 @@ import Text from './Components/Text/Text';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 
 
+
 function App() {
 
 
@@ -11,8 +12,10 @@ function App() {
     <>
       <Navbar/>
       <Text content={"REACT"}/>
+      
     
       <ItemListContainer greeting={"Bienvenidos al E-commerce"} />
+      <ItemListContainer id={1} />
     </>
   )
 }

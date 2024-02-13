@@ -1,5 +1,5 @@
-import React from 'react'
-import CardWidget from '../CardWidget/CardWidget'
+
+import CartWidget from '../CartWidget/CartWidget'
 
 const Navbar = () => {
   return (
@@ -7,13 +7,16 @@ const Navbar = () => {
         <a href="../index.html"><img src="../public/logo_size.jpg" alt="Logo" /></a>
         <ul className='listNavBar' style={{display: 'flex', justifyContent: 'space-between'}}>
             <a href=""><li>Home</li></a>
-            <a href=""><li>Nosotros</li></a>
             <a href=""><li>Plan Landing-Page</li></a>
             <a href=""><li>Plan E-commerce</li></a>
+            <a href=""><li>Plan Logos</li></a>           
             <a href=""><li>Plan Marketing</li></a>
-            <a href=""><li>Contacto</li></a>
+            <a href=""><li>Mantenimiento Web</li></a>
+            <a href=""><li>Diseño Gráfico</li></a>
+            <a href=""><li>Desarrollo APP</li></a>
+            <a href=""><li>Posicionamiento SEO</li></a>
         </ul>
-        <CardWidget/>
+        <CartWidget/>
     </div>
   )
 }
