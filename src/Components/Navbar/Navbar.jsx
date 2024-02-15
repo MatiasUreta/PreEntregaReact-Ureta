@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import CartWidget from '../CartWidget/CartWidget'
 
 const Navbar = () => {
@@ -6,16 +6,16 @@ const Navbar = () => {
     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
         <a href="../index.html"><img src="../public/logo_size.jpg" alt="Logo" /></a>
         <ul className='listNavBar' style={{display: 'flex', justifyContent: 'space-between'}}>
-            <a href=""><li>Home</li></a>
-            <a href=""><li>Plan Landing-Page</li></a>
-            <a href=""><li>Plan E-commerce</li></a>
-            <a href=""><li>Plan Logos</li></a>           
-            <a href=""><li>Plan Marketing</li></a>
-            <a href=""><li>Mantenimiento Web</li></a>
-            <a href=""><li>Diseño Gráfico</li></a>
-            <a href=""><li>Desarrollo APP</li></a>
-            <a href=""><li>Posicionamiento SEO</li></a>
-        </ul>
+            <Link to={'/'}><li>Home</li></Link>
+            <Link to={'/categoria/landing'}><li>Plan Landing-Page</li></Link>
+            <Link to={'/categoria/ecommerce'}><li>Plan E-commerce</li></Link>
+            <Link to={'/categoria/logo'}><li>Plan Logos</li></Link>       
+            <Link to={'/categoria/marketing'}><li>Plan Marketing</li></Link>
+            <Link to={'/categoria/mantenimiento'}><li>Mantenimiento Web</li></Link>
+            <Link to={'/categoria/diseño'}><li>Diseño Gráfico</li></Link>
+            <Link to={'/categoria/app'}><li>Desarrollo APP</li></Link>
+            <Link to={'/categoria/posicionamiento'}><li>Posicionamiento SEO</li></Link>
+        </ul>    
         <CartWidget/>
     </div>
   )

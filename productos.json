@@ -1,10 +1,74 @@
 [
-    {"id": 1, "nombre": "Plan Landing Page", "precio": 100.0, "descripcion": "Crea una impresionante página de aterrizaje para captar la atención de tus visitantes y convertirlos en clientes.", "img": "./assets/img/landing.png"},
-    {"id": 2, "nombre": "Plan E-commerce", "precio": 200.0, "descripcion": "Desarrolla una tienda en línea completa y segura para vender tus productos o servicios en Internet.", "img": "./assets/img/ecommerce.png"},
-    {"id": 3, "nombre": "Plan Marketing Digital", "precio": 300.0, "descripcion": "Aumenta tu visibilidad en línea y atrae a más clientes con estrategias de marketing digital efectivas.", "img": "./assets/img/marketing.png"},
-    {"id": 4, "nombre": "Plan Mantenimiento", "precio": 400.0, "descripcion": "Mantén tu sitio web actualizado y funcionando sin problemas con nuestro plan de mantenimiento.", "img": "./assets/img/mantenimiento.png"},
-    {"id": 5, "nombre": "Plan Logo", "precio": 500.0, "descripcion": "Diseña un logo único y memorable que represente la identidad de tu marca.", "img": "./assets/img/logos.png"},
-    {"id": 6, "nombre": "Plan Diseño Gráfico", "precio": 600.0, "descripcion": "Crea gráficos atractivos y profesionales para tu sitio web, redes sociales y más.", "img": "./assets/img/diseño.png"},
-    {"id": 7, "nombre": "Plan Posicionamiento SEO", "precio": 700.0, "descripcion": "Optimiza tu sitio web para los motores de búsqueda y mejora tu clasificación en los resultados de búsqueda.", "img": "./assets/img/seo.png"},
-    {"id": 8, "nombre": "Plan Desarrollo de APP", "precio": 800.0, "descripcion": "Desarrolla una aplicación móvil personalizada para ofrecer una experiencia de usuario excepcional en dispositivos móviles.", "img": "./assets/img/app.png"}
+    {
+        "id": 1,
+        "nombre": "Plan Landing Page",
+        "precio": 100.0,
+        "descripcion": "Crea una impresionante página de aterrizaje para captar la atención de tus visitantes y convertirlos en clientes.",
+        "img": "/assets/img/landing.png",
+        "stock": 2,
+        "categoria": "landing"
+    },
+    {
+        "id": 2,
+        "nombre": "Plan E-commerce",
+        "precio": 200.0,
+        "descripcion": "Desarrolla una tienda en línea completa y segura para vender tus productos o servicios en Internet.",
+        "img": "/assets/img/ecommerce.png",
+        "stock": 4,
+        "categoria": "ecommerce"
+    },
+    {
+        "id": 3,
+        "nombre": "Plan Marketing Digital",
+        "precio": 300.0,
+        "descripcion": "Aumenta tu visibilidad en línea y atrae a más clientes con estrategias de marketing digital efectivas.",
+        "img": "/assets/img/marketing.png",
+        "stock": 2,
+        "categoria": "marketing"
+    },
+    {
+        "id": 4,
+        "nombre": "Plan Mantenimiento",
+        "precio": 400.0,
+        "descripcion": "Mantén tu sitio web actualizado y funcionando sin problemas con nuestro plan de mantenimiento.",
+        "img": "/assets/img/mantenimiento.png",
+        "stock": 5,
+        "categoria": "mantenimiento"
+    },
+    {
+        "id": 5,
+        "nombre": "Plan Logo",
+        "precio": 500.0,
+        "descripcion": "Diseña un logo único y memorable que represente la identidad de tu marca.",
+        "img": "/assets/img/logos.png",
+        "stock": 1,
+        "categoria": "logo"
+    },
+    {
+        "id": 6,
+        "nombre": "Plan Diseño Gráfico",
+        "precio": 600.0,
+        "descripcion": "Crea gráficos atractivos y profesionales para tu sitio web, redes sociales y más.",
+        "img": "/assets/img/diseño.png",
+        "stock": 6,
+        "categoria": "diseño"
+    },
+    {
+        "id": 7,
+        "nombre": "Plan Posicionamiento SEO",
+        "precio": 700.0,
+        "descripcion": "Optimiza tu sitio web para los motores de búsqueda y mejora tu clasificación en los resultados de búsqueda.",
+        "img": "/assets/img/seo.png",
+        "stock": 5,
+        "categoria": "posicionamiento"
+    },
+    {
+        "id": 8,
+        "nombre": "Plan Desarrollo de APP",
+        "precio": 800.0,
+        "descripcion": "Desarrolla una aplicación móvil personalizada para ofrecer una experiencia de usuario excepcional en dispositivos móviles.",
+        "img": "/assets/img/app.png",
+        "stock": 7,
+        "categoria": "app"
+    }
 ]
