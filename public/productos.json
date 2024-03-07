@@ -15,7 +15,7 @@
         "descripcion": "Desarrolla una tienda en línea completa y segura para vender tus productos o servicios en Internet.",
         "img": "/assets/img/ecommerce.png",
         "stock": 4,
-        "categoria": "ecommerce"
+        "categoria": "landing"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "descripcion": "Mantén tu sitio web actualizado y funcionando sin problemas con nuestro plan de mantenimiento.",
         "img": "/assets/img/mantenimiento.png",
         "stock": 5,
-        "categoria": "mantenimiento"
+        "categoria": "landing"
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@
         "descripcion": "Diseña un logo único y memorable que represente la identidad de tu marca.",
         "img": "/assets/img/logos.png",
         "stock": 1,
-        "categoria": "logo"
+        "categoria": "diseño"
     },
     {
         "id": 6,
@@ -60,7 +60,7 @@
         "descripcion": "Optimiza tu sitio web para los motores de búsqueda y mejora tu clasificación en los resultados de búsqueda.",
         "img": "/assets/img/seo.png",
         "stock": 5,
-        "categoria": "posicionamiento"
+        "categoria": "marketing"
     },
     {
         "id": 8,
@@ -69,6 +69,6 @@
         "descripcion": "Desarrolla una aplicación móvil personalizada para ofrecer una experiencia de usuario excepcional en dispositivos móviles.",
         "img": "/assets/img/app.png",
         "stock": 7,
-        "categoria": "app"
+        "categoria": "landing"
     }
 ]

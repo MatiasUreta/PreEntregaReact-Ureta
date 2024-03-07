@@ -15,7 +15,7 @@ const ItemListContainer = () => {
 
         if(categoryId){
           const filteredProducts = data.filter((p) => p.categoria == categoryId)
-          setProductos(filteredProducts) // Establece los productos filtrados en el estado
+          setProductos(filteredProducts) 
         }else{
           setProductos(data)
         }

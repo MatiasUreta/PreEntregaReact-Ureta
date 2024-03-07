@@ -1,7 +1,15 @@
-
 import ItemCounts from '../ItemCounts/ItemCounts'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ({producto}) => {
+
+  const onAdd = (count) => {
+    console.log(count)
+
+  }
+
+
+
   return (
     <div className='itemDetailCss'>
         <h1>{producto.nombre} </h1>
@@ -10,7 +18,7 @@ const ItemDetail = ({producto}) => {
         <h2>{producto.descripcion} </h2>
         <h3>Stock: {producto.stock} </h3>
 
-        <ItemCounts initial={1} stock={producto.stock}/>
+        <ItemCounts initial={1} stock={producto.stock} onAdd={onAdd} />
     </div>
   )
 }

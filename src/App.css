@@ -13,7 +13,7 @@ ul li{
     color: white;
     padding: 10px;
     background-color: gray;
-    border: 1px solid black;
+    border: 1px solid blue;
     border-radius: 15px;
     margin: 5px;
     margin-top: 40px;
@@ -34,12 +34,10 @@ button {
 }
 img {
     height: 150px;
-    transition: transform 0.3s ease; /* Agrega una transición suave al transform */
+    transition: transform 0.3s ease;
 }
 
-img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño de la imagen un 10% cuando el cursor pasa por encima */
-}
+
 
 .container {
     display: flex;
@@ -47,14 +45,13 @@ img:hover {
     align-items: center;
     flex-direction: row;
     padding: 20px;
-    flex-wrap: wrap; /* Permite que los elementos del contenedor se ajusten a la siguiente línea si no hay suficiente espacio */
-}
+    flex-wrap: wrap; 
 
 .itemListContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 25%; /* Ajusta el ancho de cada elemento a 1/4 del contenedor para que se ajusten 4 por fila */
+    width: 25%; 
 } 
 
 .item {
@@ -75,3 +72,29 @@ img:hover {
 .item img:hover {
     transform: scale(1.1);
 }
+
+
+/* card */
+.card {
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 25px;
+    gap: 25px;
+    margin-bottom: 20px; 
+}
+  
+  /* Estilos para la imagen dentro de la tarjeta */
+  .card-image {
+    width: 250px; 
+    height: auto; 
+  }
+  
+
+  .carousel-container {
+    margin-bottom: 20px; /* Espacio entre el carrusel y otros elementos */
+  }
+  
+  /* Ajusta los estilos según tus necesidades */
+  .carousel {
+    /* Estilos para el carrusel */
+  }

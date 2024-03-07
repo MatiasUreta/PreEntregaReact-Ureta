@@ -2,9 +2,11 @@ import {useState, useEffect} from 'react'
 import ItemDetail from '../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 
+
 const ItemDetailContainer = () => {
   const [producto, setProducto] = useState ([]);
   const {id} = useParams ();
+
 
   useEffect (()=> {
     const fetchData = async () => {
