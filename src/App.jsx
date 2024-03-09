@@ -1,3 +1,4 @@
+import React, {useState,useEffect} from 'react';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
@@ -8,14 +9,70 @@ import ItemCounts from './Components/ItemCounts/ItemCounts';
 import Error from './Components/Error/Error';
 import Carousel from './Components/Carousel/Carousel';
 import Cart from './Components/Cart/Cart';
-import ThemeProvider from './context/ThemeContext';
+import CartProvider from './context/CartContext';
+//import { getFirestore,doc,getDoc } from 'firebase/firestore';
+//import {getFirestore,collection,getDocs } from 'firebase/firestore'
+import {getFirestore, collection, getDocs, query, where } from 'firebase/
+
 
 function App() {
+
+  //DOCUMENTO
+  //const [product,setProduct] = useState (null)
+
+  //useEffect (()=> {
+ //   const db = getFirestore()
+
+ //   const productRef = doc(db,"carrito", "A3CO3dYrad1oAgKg7FIO")
+
+  //  getDoc (productRef).then((snapshot) =>{
+  //    if (snapshot.exists) {
+ //       setProduct ({id:snapshot.id, ...snapshot.data()});
+ //     }
+ //   })
+ // }, []);
+
+
+  //COLECCION ENTERA
+  /*const [products,setProducts] =useState ([])
+  useEffect (()=> {
+    const db = getFirestore()
+
+    const itemsCollection = collection (db, "carrito")
+
+    getDocs (itemsCollection).then((snapshot)=>{
+      setProducts(napshot.docs.map((doc)=>(
+        {id:doc.id, ... doc.data()}
+      )))
+    })
+  }, [])
+  console.log(products)*/
+
+  //filtrada
+  const [products,setProducts]  = useEffect ([])
+  useEffect (()=>{
+    const db = getFirestore()
+
+    const q = query (
+      collection (db,"carrito"),
+      where("categotia", "==", "landing")
+    )
+    getDocs(q).then((snapshot)=>{
+      if (snapshot.size === 0){
+        console.log("No hay reseltados")
+      }
+      setProducts(snapshot.docsmap((doc) => (
+        {id:doc.id, ... doc.data()}
+      )))
+    })
+  }.[])
+
+
   return (
     <>
       <BrowserRouter>
 
-        <ThemeProvider>
+        <CartProvider>
           <Navbar />
 
           <Routes>
@@ -30,7 +87,7 @@ function App() {
 
           <Footer />
 
-        </ThemeProvider>
+        </CartProvider>
 
       </BrowserRouter>
     </>
